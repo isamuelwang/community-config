@@ -5,9 +5,9 @@ spring:
     host: 122.51.105.58
   application:
     name: community-base
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://122.51.105.58:3306/community_base?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://122.51.105.58:3306/community_base?characterEncoding=UTF8
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource

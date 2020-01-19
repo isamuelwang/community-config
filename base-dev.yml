@@ -3,6 +3,8 @@ server:
 spring:
   rabbitmq:
     host: 122.51.105.58
+    username: root
+    password: 123456
   application:
     name: community-base
   datasource:  

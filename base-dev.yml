@@ -7,32 +7,11 @@ spring:
     password: 123456
   application:
     name: community-base
-  datasource:  
+  datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://122.51.105.58:3306/community_base?characterEncoding=UTF8
+    url: jdbc:mysql://122.51.105.58:3306/community_friend?characterEncoding=UTF8
     username: root
     password: 123456
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      initial-size: 10
-      max-active: 20
-      web-stat-filter:
-        enabled: true
-        url-pattern: /*
-        exclusions: /druid/*
-      stat-view-servlet:
-        enabled: true
-        reset-enable: true
-        url-pattern: /druid/*
-        allow: 127.0.0.1
-        login-username: admin
-        login-password: admin
-      filter:
-        wall:
-          enabled: true
-          db-type: mysql
-          log-violation: true
-          throw-exception: true
   jpa:
     database: MySQL
     show-sql: true
